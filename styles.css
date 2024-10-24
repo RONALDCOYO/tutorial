@@ -42,16 +42,16 @@ nav a {
 
 /* Estilo especial para la sección 3 */
 .seccion.especial {
-    background: #e0f7fa;
-    border-color: #00695c;
+    background: #a0f136;
+    border-color: #cdd4d4;
 }
 
 /* Estilo del pie de página */
 footer {
     text-align: center;
     padding: 10px;
-    background: #6264f7;
-    color: white;
+    background: #b0b0e7;
+    color: rgb(73, 60, 60);
     position: relative;
     bottom: 0;
     width: 100%;
