@@ -21,16 +21,16 @@
         <div class="collapse navbar-collapse" id="navbarNav">
             <ul class="navbar-nav">
                 <li class="nav-item">
-                    <a class="nav-link" href="#seccion1">CCTV</a>
+                    <a class="nav-link" href="#collapseOne" data-toggle="collapse" aria-expanded="false" aria-controls="collapseOne">CCTV</a>
                 </li>
                 <li class="nav-item">
-                    <a class="nav-link" href="#seccion2">CABLEADO ESTRUCTURADO</a>
+                    <a class="nav-link" href="#collapseTwo" data-toggle="collapse" aria-expanded="false" aria-controls="collapseTwo">CABLEADO ESTRUCTURADO</a>
                 </li>
                 <li class="nav-item">
-                    <a class="nav-link" href="#seccion3">VIRTUALIZACION</a>
+                    <a class="nav-link" href="#collapseThree" data-toggle="collapse" aria-expanded="false" aria-controls="collapseThree">VIRTUALIZACION</a>
                 </li>
                 <li class="nav-item">
-                    <a class="nav-link" href="#seccion4">SEÑALIZACION VIAL</a>
+                    <a class="nav-link" href="#collapseFour" data-toggle="collapse" aria-expanded="false" aria-controls="collapseFour">SEÑALIZACION VIAL</a>
                 </li>
             </ul>
         </div>
@@ -121,5 +121,16 @@
     <script src="https://code.jquery.com/jquery-3.5.1.slim.min.js"></script>
     <script src="https://cdn.jsdelivr.net/npm/@popperjs/core@2.5.2/dist/umd/popper.min.js"></script>
     <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.5.2/js/bootstrap.min.js"></script>
+    
+    <script>
+        // Función para desplazamiento suave
+        $('a.nav-link').on('click', function(event) {
+            event.preventDefault();
+            const target = $(this).attr('href');
+            $('html, body').animate({
+                scrollTop: $(target).offset().top
+            }, 500);
+        });
+    </script>
 </body>
 </html>
